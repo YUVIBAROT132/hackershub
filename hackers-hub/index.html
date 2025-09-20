@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hackers Hub</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="matrix-bg"></canvas>
+  <div class="content">
+    <nav class="navbar navbar-expand-lg navbar-dark topbar">
+      <div class="container">
+        <a class="navbar-brand text-success fw-bold" href="index.html">Hackers<span class="text-info">Hub</span></a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="articles.html">Articles</a></li>
+            <li class="nav-item"><a class="nav-link" href="tools.html">Tools</a></li>
+            <li class="nav-item"><a class="nav-link" href="tips.html">Tips</a></li>
+            <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero text-center">
+      <h1 class="glitch text-success">Hacker's Hub</h1>
+      <p class="lead text-info">A terminal-forged vault of tutorials, tool writeups, and crisp hacker knowledge.</p>
+    </header>
+
+    <main class="container py-4">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <article class="card hacker-card">
+            <div class="card-body">
+              <h5 class="card-title">Featured Guide</h5>
+              <p class="card-text">How to run stealthy reconnaissance with nmap and interpret results like a pro.</p>
+              <a href="articles.html" class="btn btn-outline-success btn-sm">Open</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="card hacker-card">
+            <div class="card-body">
+              <h5 class="card-title">Tool Deep-dive</h5>
+              <p class="card-text">Metasploit quick-start and common payload patterns.</p>
+              <a href="tools.html" class="btn btn-outline-info btn-sm">Explore</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="card hacker-card">
+            <div class="card-body">
+              <h5 class="card-title">Fast Tips</h5>
+              <p class="card-text">Bash one-liners, tmux tricks, and Kali shortcuts.</p>
+              <a href="tips.html" class="btn btn-outline-success btn-sm">Grab</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <section class="mt-5">
+        <h3 class="section-title">Latest uploads</h3>
+        <div id="latest" class="list-group">
+          <a class="list-group-item list-group-item-action bg-dark text-light border-success" href="articles.html">No uploads yet — add your first article in the /articles.html file.</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer text-center py-3">
+      <small class="text-muted">© 2025 Hackers Hub — Built in the terminal</small>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/matrix.js"></script>
+</body>
+</html>

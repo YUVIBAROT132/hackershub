@@ -1,0 +1,49 @@
+:root{
+  --bg:#060606;
+  --panel:#0f0f0f;
+  --accent:#00ff6a;
+  --accent2:#2fe6ff;
+  --muted:#9ae6b4; /* brighter text color */
+  --text:#dfffe6;  /* main readable text */
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family: 'Share Tech Mono', monospace;
+  overflow-x: hidden;
+}
+#matrix-bg{
+  position:fixed;left:0;top:0;width:100%;height:100%;z-index:0;
+}
+.content{position:relative;z-index:2}
+.topbar{background:transparent;border-bottom:1px solid rgba(0,255,0,0.06)}
+.navbar-brand{font-weight:700}
+.hero{padding:4rem 1rem 2rem;text-align:center}
+.glitch{font-size:2.4rem;text-shadow:0 0 6px var(--accent),0 0 18px var(--accent2); color: var(--accent2); }
+.hacker-card{
+  background:linear-gradient(180deg, rgba(10,10,10,0.94), rgba(8,8,8,0.95));
+  border:1px solid rgba(0,255,0,0.12);
+  transition:transform .18s ease, box-shadow .18s ease;
+  color: var(--text);
+}
+.hacker-card .card-title{color: var(--accent); font-weight:700}
+.hacker-card .card-text{color: var(--muted); opacity: 0.95}
+.hacker-card a{color:var(--accent2); border-color:var(--accent2)}
+.hacker-card:hover{transform:translateY(-6px) scale(1.02); box-shadow:0 0 30px rgba(0,255,0,0.07)}
+.section-title{color:var(--accent); margin-bottom:1rem}
+.footer{border-top:1px solid rgba(0,255,0,0.06); background:transparent}
+.list-group-item{
+  background:linear-gradient(90deg, rgba(8,8,8,0.9), rgba(6,6,6,0.9));
+  color: var(--text);
+  border:1px solid rgba(0,255,0,0.06);
+}
+.tip{font-family:monospace; color: var(--muted)}
+a.nav-link{color:var(--muted)!important}
+a.nav-link:hover{color:var(--accent2)!important}
+.section-heading{color:var(--accent); font-size:1.4rem; letter-spacing:1px}
+@media (max-width:576px){
+  .glitch{font-size:1.8rem}
+}

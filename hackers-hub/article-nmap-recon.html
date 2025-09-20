@@ -1,0 +1,13 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nmap Recon</title><link href="css/style.css" rel="stylesheet"></head><body>
+<main class="container py-4">
+<h1>Nmap reconnaissance basics</h1>
+<p>Nmap is the go-to network scanner. Use it responsibly and with permission.</p>
+<h3>Common scans</h3>
+<ul>
+<li><code>nmap -sC -sV -oA recon 10.10.10.5</code> — default scripts, service detection, save output</li>
+<li><code>nmap -p- --min-rate 1000 10.10.10.5</code> — fast full-port scan</li>
+</ul>
+<h3>Output</h3>
+<p>Read service versions and correlating with CVEs. Combine with banner grabbing and web fuzzing.</p>
+</main></body></html>

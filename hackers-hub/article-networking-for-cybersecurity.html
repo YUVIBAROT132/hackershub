@@ -1,0 +1,25 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Networking for Cybersecurity</title><link href="css/style.css" rel="stylesheet"></head><body>
+<main class="container py-4">
+<h1>Networking for Cybersecurity</h1>
+<p><strong>Overview:</strong> Networking is the backbone of both attacks and defense. Understanding TCP/IP, routing, subnets, ARP, DNS, and common services will make you a better defender and tester.</p>
+<h3>Key Concepts</h3>
+<ul>
+<li>OSI vs TCP/IP models — map services to layers</li>
+<li>IP addressing, subnets, CIDR — host discovery and segmentation</li>
+<li>Ports and services — common ports (22,80,443,445,3389)</li>
+<li>DNS fundamentals — lookups, zone transfers, poisoning risks</li>
+</ul>
+<h3>Recommended commands</h3>
+<pre>
+# discover local hosts
+nmap -sn 192.168.1.0/24
+
+# check routing table
+ip route show
+
+# ARP table
+arp -n
+</pre>
+<p><em>Defensive tip:</em> monitor abnormal DNS queries and unusual outbound connections; these are common signs of compromise.</p>
+</main></body></html>

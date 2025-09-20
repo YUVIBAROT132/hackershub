@@ -1,0 +1,38 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tips - Hackers Hub</title><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"><link href="css/style.css" rel="stylesheet"></head><body>
+<canvas id="matrix-bg"></canvas>
+<div class="content">
+<nav class="navbar navbar-dark topbar"><div class="container"><a class="navbar-brand text-success" href="index.html">HackersHub</a></div></nav>
+<main class="container py-4">
+<h2 class="section-heading">25 Essential Hacking Tips</h2>
+<ol class="list-group list-group-numbered">
+<li class="list-group-item">Always get explicit permission before testing any system.</li>
+<li class="list-group-item">Reproduce findings locally before reporting—show steps and commands.</li>
+<li class="list-group-item">Keep a VM lab (Kali, Metasploitable, OWASP Juice Shop) isolated from your network.</li>
+<li class="list-group-item">Use snapshots often; revert to clean state after risky changes.</li>
+<li class="list-group-item">Log everything: commands, timestamps, and outputs for reproducibility.</li>
+<li class="list-group-item">Use non-root user for daily tasks; escalate only when necessary for tests.</li>
+<li class="list-group-item">Sanitize exfiltrated sensitive data—do not store secrets unnecessarily.</li>
+<li class="list-group-item">Prioritize attack surface mapping: inventory hosts, services, and exposed interfaces.</li>
+<li class="list-group-item">Start with passive recon before active scanning to limit noise.</li>
+<li class="list-group-item">Use rate limits in scanners to avoid crashing services.</li>
+<li class="list-group-item">Correlate multiple data sources (logs, NetFlow, packet captures).</li>
+<li class="list-group-item">Automate repetitive tasks with safe scripts; test on a staging target first.</li>
+<li class="list-group-item">Practice responsible disclosure; include remediation steps in reports.</li>
+<li class="list-group-item">Keep your toolset updated but test updates in a sandbox first.</li>
+<li class="list-group-item">Learn to read pcap files—network evidence often lives there.</li>
+<li class="list-group-item">Use strong key management for SSH keys and rotate them periodically.</li>
+<li class="list-group-item">Use least-privilege principle when creating accounts for tests.</li>
+<li class="list-group-item">Document assumptions and scope in every engagement.</li>
+<li class="list-group-item">Use OSINT safely: verify sources and avoid aggressive queries that attract attention.</li>
+<li class="list-group-item">Prefer reproducible proofs-of-concept over noisy exploits in reports.</li>
+<li class="list-group-item">Sanitize any malware samples—work in isolated lab and use snapshots.</li>
+<li class="list-group-item">Annotate screenshots and terminal output for clarity in reports.</li>
+<li class="list-group-item">Practice proper cleanup after tests: remove backdoors and temporary accounts.</li>
+<li class="list-group-item">Use version control (git) for your notes and scripts—private repo for sensitive work.</li>
+<li class="list-group-item">Continuously learn: follow vulnerability disclosures and CVE timelines.</li>
+</ol>
+</main>
+<footer class="footer text-center py-3">© 2025 Hackers Hub</footer>
+</div>
+<script src="js/matrix.js"></script></body></html>
